@@ -79,7 +79,7 @@ public class Main {
     public static void writeXLSXFile() throws IOException {
         String excelFileName = "C:\\xls\\Registru.xlsx";//name of excel file
         String sheetName = "Sheet1";//name of sheet
-        XSSFWorkbook wb = new XSSFWorkbook(sheetName);
+        XSSFWorkbook wb = new XSSFWorkbook();
         XSSFSheet sheet = wb.createSheet(sheetName);
         //iterating r number of rows
         for (int r = 0; r < 100; r++) {
